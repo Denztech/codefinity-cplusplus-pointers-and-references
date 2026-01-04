@@ -1,0 +1,21 @@
+#include <iostream>
+
+void swap(int _ p_first, int _ p_second)
+{
+    int temporary =  *_ p_first;
+    *_ p_first = *_ p_second;
+    *_ p_second = temporary;
+}
+
+
+int main() 
+{
+    int first = 100;
+    int second = 0; 
+    
+    swap(&first, &second);
+    
+    std::cout << first << ' ' << second;
+
+    return 0;
+}
